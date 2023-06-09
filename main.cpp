@@ -11,7 +11,7 @@ int alphabet(char let){
 int main(){
     string word = "Hello world";    string key = "cat";    int k = 0;    string new_word = "";    for (int i = 0; i < word.length(); ++i) {
         if(((int(word[i]) >=65) && (int(word[i]) <= 90)) || ((int(word[i]) >=97) && (int(word[i]) <= 122))){
-            new_word += char((alphabet(word[i]) + alphabet(key[k%key.length()]))%26 + 95) ;            k++;        }else{
+            new_word += char((alphabet(word[i]) + alphabet(key[k%key.length()]))%26 + 69) ;            k++;        }else{
             new_word += " ";        }
     }
     cout << new_word;    return 0;}
